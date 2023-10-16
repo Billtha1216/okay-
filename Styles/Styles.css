@@ -18,11 +18,19 @@
     size: A4;
     margin: 0;
 }
+div{
+    display: block;
+}
+.page {
+    background-image: url(backgrounds.png);
+    background-position:100%; 
+    background-repeat: no-repeat;
+    background-size:contain;
+    display: block;
+    margin-bottom: 0.5cm;
+    top: 20px;
+}
 @media print {
-    html, body {
-        width: 210mm;
-        height: 297mm;   
-    }
     .page {
         border: initial;
         border-radius: initial;
@@ -34,7 +42,7 @@
 body {
     background: rgb(139, 121, 121); 
 }
-section {
+.page {
     background-image: url(backgrounds.png);
     background-position:100%; 
     background-repeat: no-repeat;
