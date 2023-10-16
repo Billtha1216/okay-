@@ -30,14 +30,8 @@
     background-position:100%; 
     background-repeat: no-repeat;
     background-size:contain;
-    margin-bottom: 0.5cm;
-    top: 20px;
 }
 @media print {
-    html, body {
-        width: 210mm;
-        height: 297mm;
-    }
     .page {
         border: initial;
         border-radius: initial;
@@ -52,8 +46,6 @@
     background-repeat: no-repeat;
     background-size:contain;
     display: block;
-    margin-bottom: 0.5cm;
-    top: 20px;
 }
 .page{  
     width: 21cm;
