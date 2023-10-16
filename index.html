@@ -1,218 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-    outline: none;
-    font-family: SiemReap;
-    color: black;
-    font-weight: 300;
-    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */            /* Firefox 48 – 96 */
-    print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
-}
-@font-face {
-    font-family: SiemReap;
-    src: url(KhmerOSContent-KhAuto0.ttf);
-}
-@page {
-    size: A4;
-    margin: 0;
-}
-div{
-    display: block;
-}
-.page {
-    background-image: url(backgrounds.png);
-    background-position:100%; 
-    background-repeat: no-repeat;
-    background-size:contain;
-    display: block;
-    margin-bottom: 0.5cm;
-    top: 20px;
-}
-@media print {
-    .page {
-        border: initial;
-        border-radius: initial;
-        min-height: initial;
-        box-shadow: initial;
-        page-break-after: always;
-    }
-}
-body {
-    background: rgb(139, 121, 121); 
-}
-.page {
-    background-image: url(backgrounds.png);
-    background-position:100%; 
-    background-repeat: no-repeat;
-    background-size:contain;
-    display: block;
-    margin-bottom: 0.5cm;
-    top: 20px;
-}
-.page{  
-    width: 21cm;
-    height: 29.7cm; 
-}
-/*-------------LOGO---------*/
-.logoo{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 150px;
-    padding: 15px;
-}
-.logo img{
-    width:140px; left:39px;
-}
-.logo h1{
-    color:#e7b214;
-    font-family: Khmer OS Muol Light;
-    text-align: center;
-    font-size: 25px;
-    margin-top: -10px;
-}
-.logo h2{
-    color:#e7b214;
-    font-family: Khmer OS Muol Light;
-    text-align: center;
-    font-size: 18px;
-}
-.logoo2{
-    float: left;
-    margin-top: -30px;
-    margin-left: 20px;
-}
-.logo2 img{
-    width: 80px;
-}
-.logo2 h1{
-    color:#e7b214;
-    font-family: Khmer OS Muol Light;
-    text-align: center;
-    font-size: 18px;
-}
-.logo2 h2{
-    color:#e7b214;
-    font-family: Khmer OS Muol Light;
-    text-align: center;
-    font-size: 18px;
-}
-
-/*-------------text-middle-col---------*/
-.text-middle-col{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100px;
-    margin-top: 20px;
-}
-.text-middle h1{
-    color:#e7b214;
-    font-family: Khmer OS Muol Light;
-    text-align: center;
-    font-size: 29px;
-    margin-top: -20px;
-}
-.text-middle h2{
-    color: rgb(0, 0, 0);
-    font-family: Khmer OS Muol Light;
-    text-align: center;
-    font-size: 20px;
-}
-
-
-/*------------paragraph------------*/
-.paragragph1{
-    width: 100%;
-    height: auto;
-    margin-top: -20px;
-}
-.paragragph1 p{
-    text-align: justify;
-    font-size: 14px;
-}
-#paragraph{
-    margin-left: 60px;
-    margin-right: 70px;
-}
-/*-------------Information---------*/
-
-.information{
-    height: auto;
-    width: 100%;
-    margin-top: 10px;
-}
-.list {
-    text-align: justify;
-    font-weight: 400;
-    font-size: 14px;
-    margin-right: 67px;
-    margin-left: 79px;
-}
-tr{
-    display:inline-table;
-    text-align: center;  
-}
-#insert {
-    font-family: Khmer OS Muol Light;
-}
-#insert-date{
-    font-family: Khmer OS Content-Kh Auto;
-    font-weight: 700; font-size: 13px;
-}
-#line-time{
-    padding-left: 2px;
-}
-
-
-/*-------------PHOTO---------*/
-.photo{
-    width: 100%;
-    height: 180px;
-    margin-top: 3px;
-}
-.photo h1{
-    font-size: 14px;
-}
-#box-photo{
-    margin-top: 25px;
-    border: solid black 1px;
-    width: 90px;
-    height: 110px;
-    font-size: 14px;
-}
-#box-photo p{
-    margin-top: 30px;
-}
-
-
-/*-------------footer---------*/
-footer{
-    display: flex;
-    margin-top: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.footer{
-    font-size: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Date{
-    padding-left: 17px;
-}
-.Date h3{
-    font-size: 16px;
-    font-weight: 500;
-    font-family: Khmer OS Muol Light;
-}
-.Date h4{
-    font-size: 14px;
-    font-weight: 500;
-    font-family: Khmer OS Muol Light;
-    margin-top: 80px;
-    margin-left: 55px;
-}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> សាលាភូមិន្ទរដ្ឋបាល (ERA) </title>
+        <link rel="StyleSheet" type="text/css" href="Styles/Styles.css">
+        <link rel="icon" href="img/Asset 6.png">
+    </head>
+    <body>
+        <center>
+        <div>
+        <section class="page" >
+            <div class="logoo">
+                <div class="logo">
+                   <img class="pic-logo" src="img/Asset 3@1080x.png">
+                    <h1>ព្រះរាជាណាចក្រកម្ពុជា</h1>
+                    <h2>ជាតិ សាសនា ព្រះមហាក្សត្រ</h2>
+                    <img src="img/Asset 9@1080x.png">
+                </div>
+            </div>
+            <div class="logoo2">
+                <div class="logo2">
+                    <img src="img/Asset 4@1080x.png">
+                    <h1>ក្រសួងមុខងារសាធារណៈ</h1>
+                    <h2>សាលាភូមិន្ទរដ្ឋបាល</h2>
+                    <img src="img/Asset 9@1080x.png">
+                </div>
+            </div>
+            <div class="text-middle-col">
+                <div class="text-middle">
+                    <h1>វិញ្ញាបនបត្របញ្ជាក់ការសិក្សា</h1>
+                    <h2>រដ្ឋមន្រ្តីក្រសួងមុខងារសាធារណៈ</h2>
+                </div>
+            </div>
+            <div class="paragragph1">
+                <div id="paragraph">
+                   <p>- &nbsp &nbsp​ បានឃើញព្រះរាជក្រឹត្យលេខ ​នស/រកត/០២១៤/១៩៥  &nbspចុះថ្ងៃទី១៧  &nbsp ​ខែកុម្ភៈ ​ឆ្នាំ២០១៤ &nbspស្តីពីការកែសម្រួលព្រះរាជក្រឹត្យ <br>
+                    &nbsp &nbsp &nbsp លេខ នស/រកត/០៥៩៥/៤០ ចុះថ្ងៃទី២១ ខែមេសា &nbsp​ឆ្នាំ១៩៩៥  &nbsp &nbsp ​ស្តីពីការបង្កើតសាលាភូមិន្ទរដ្ឋបាល </p>
+                   <p>- &nbsp &nbsp ​បានឃើញព្រះរាជក្រឹត្យលេខ​ &nbspនស/រកត/០២១៩/២៥៨​ &nbspចុះថ្ងៃទី២០​  ខែកុម្ភៈ  ឆ្នាំ២០១៩ &nbsp ស្តីពីការរៀបចំនិងការប្រព្រឹត្តទៅ<br>
+                    &nbsp &nbsp &nbsp នៃសាលាភូមិន្ទរដ្ឋបាល</p>
+                   <p>- &nbsp &nbsp ​បានឃើញអនុក្រឹត្យលេខ &nbsp១៩៧ &nbspអនុក្រ.បក &nbspចុះថ្ងៃទី០៤ &nbspខែមិថុនា ឆ្នាំ២០១៤ &nbsp ស្តីពីលក្ខន្តិកៈរបស់សាលាភូមិន្ទរដ្ឋបាល</p>
+                </div>
+            </div>
+              <!-----------------------------INFORMATION------------------------>
+            <div class="information">
+                <table height="100%" class="list"  border-collapse="collapse">
+                    <tr>
+                        <th width="15%">បញ្ជាក់ថាឈ្មោះ</th>
+                        <th id="insert" width="33%">សថសដ្ិនសនងថចិេ</th>
+                        <th  width="15%">ជាអក្សរឡាតាំង</th>
+                        <th id="insert" width="33%">៨៧៩៩រតងវេ៨៦៨៧៨ដង</th>
+                        <th id="gender" width="5%">ភេទ</th>
+                        <th  width="8%">ប្រុស</th>
+                    </tr>
+                    <tr>
+                        <th width="8%">កើតថ្ងៃទី</th>
+                        <th id="insert-date" width="19%"></th>
+                        <th width="5%">នៅ</th>
+                        <th id="insert" width="17%"></th>
+                        <th width="11%">ជាសិក្ខាកាម</th>
+                        <!-- <th id="insert" width="39%">គ្រប់គ្រងរដ្ឋបាលនិងលិខិតគតិយុត្ត</th> -->
+                        <th id="insert" width="39%"></th>
+                    </tr>
+                    <tr >
+                        <th colspan="6" id="line-time">បានទទួលការបណ្តុះបណ្តាលនៅសាលាភូមិន្ទរដ្ឋបាលរយៈពេល ១២០ម៉េាង ដោយជោគជ័យ។</th>
+                    </tr>
+                    <tr >
+                        <th colspan="6" id="line-time">វិញ្ញាបនបត្របញ្ជាក់ការសិក្សានេះត្រូវបានចេញជូនសាមីជន ដើម្បីប្រើប្រាស់តាមផ្លូវច្បាប់។</th>
+                    </tr>
+                </table>
+            </div>
+            <!------PHOTO-->
+            <div class="photo">
+                <div>
+                    <h1>ចុះបញ្ជីលេខ : </h1>
+                    <div id="box-photo">
+                        <p> រូបថត</p> <b>៤x៦</b>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer">
+                    <div class="Date">
+                        <h1>ថ្ងៃ.....................ខែ...............ឆ្នាំថោះ បញ្ចស័ក ព.ស២៥៦៧</h1>
+                        <h2>រាជធានីភ្នំពេញ ថ្ងៃទី........... ខែ........... ឆ្នាំ............</h2>
+                        <h3>នាយកសាលាភូមិន្ទរដ្ឋបាល</h3>
+                        <h4>យក់ ប៊ុនណា</h4>
+                    </div>
+                    <div class="Date">
+                        <h1>ថ្ងៃ.....................ខែ...............ឆ្នាំថោះ បញ្ចស័ក ព.ស២៥៦៧</h1>
+                        <h2>រាជធានីភ្នំពេញ ថ្ងៃទី........... ខែ........... ឆ្នាំ............</h2>
+                        <h3>រដ្ឋមន្រ្តី</h3>
+                        <h4>ហ៊ុន ម៉ានី</h4>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+        </center>
+        <script>
+            // self executing function here
+            (function() {
+                // your page initialization code here
+                // the DOM will be available here
+                window.print();
+            })();
+        </script>    
+    </body>
+</html>
