@@ -1,5 +1,4 @@
 *{
-    margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
@@ -20,9 +19,6 @@
     width: 21cm;
     height: 29.7cm;
 }
-div{
-    display: block;
-}
 .prevent-select {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -33,11 +29,15 @@ div{
     background-position:100%; 
     background-repeat: no-repeat;
     background-size:contain;
-    display: block;
+    min-height: 297mm;
     margin-bottom: 0.5cm;
     top: 20px;
 }
 @media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
     .page {
         border: initial;
         border-radius: initial;
@@ -46,17 +46,11 @@ div{
         page-break-after: always;
     }
 }
-body {
-    background: rgb(139, 121, 121); 
-    margin: 0;
-    padding: 0;
-}
 .page {
     background-image: url(backgrounds.png);
     background-position:100%; 
     background-repeat: no-repeat;
     background-size:contain;
-    display: block;
     margin-bottom: 0.5cm;
     top: 20px;
 }
