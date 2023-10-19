@@ -1,3 +1,22 @@
+<?php
+$firstname = 'NHEM';
+$lastname = 'VICHIKA';
+$firstnamephonetic = 'ញ៉ែម';
+$lastnamephonetic = 'វិច្ឆិកា';
+//-----------------------------------------------------------------------------------------
+$student['fullnameKh'] = $firstnamephonetic." ".$lastnamephonetic ;
+$student['fullnameLatin'] = $firstname." ".$lastname;
+$student['dateofbirth'] = "២៨ ខែវិច្ឆិកា ឆ្នាំ១៩៧៩";
+$student['sex'] = "ប្រុស";
+$student['placeofbirth'] = "ក្រុងភ្នំពេញ";
+$course['name'] = "វគ្គជំនាញតាក់តែងលិខិតរដ្ឋបាល និងបទដ្ឋានគតិយុត្ត";
+$course['duration'] = '១២០ម៉ោង';
+$number = "១២៤៤";
+//==================================================
+certification($student,$course,$number);
+
+function certification($student,$course,$number) {
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,11 +24,35 @@
         <title> សាលាភូមិន្ទរដ្ឋបាល (ERA) </title>
         <link rel="StyleSheet" type="text/css" href="Styles/Styles.css">
         <link rel="icon" href="img/Asset 6.png">
+        <style>
+            @page {
+                size: A4 portraits;
+                margin: 0 0;
+            }
+
+            .rotingtxt{
+	            -webkit-transform: rotate(331deg);
+                -moz-transform: rotate(331deg);
+                -o-transform: rotate(331deg);
+                transform: rotate(331deg);
+                font-size: 8em;   color: rgba(255, 5, 5, 0.17);
+                position: relative;
+                left: 10px; top: 500px;
+                font-family: 'Denk One', sans-serif;
+                text-transform:uppercase;
+                padding-left: 10%;
+            }
+            .prevent-select {
+                -webkit-user-select: none; /* Safari */
+                -ms-user-select: none; /* IE 10 and IE 11 */
+                user-select: none; /* Standard syntax */
+            }
+            </style>
+
     </head>
     <body class="prevent-select">
         <center>
-        <div>
-        <section class="page" >
+        <section size="A4" >
             <div class="logoo">
                 <div class="logo">
                    <img class="pic-logo" src="img/Asset 3@1080x.png">
@@ -34,7 +77,7 @@
             </div>
             <div class="paragragph1">
                 <div id="paragraph">
-                   <p>- &nbsp &nbsp​ បានឃើញព្រះរាជក្រឹត្យលេខ ​នស/រកត/០២១៤/១៩៥  &nbspចុះថ្ងៃទី១៧  &nbsp ​ខែកុម្ភៈ ​ឆ្នាំ២០១៤ &nbspស្តីពីការកែសម្រួលព្រះរាជក្រឹត្យ <br>
+                   <p>- &nbsp &nbsp;បានឃើញព្រះរាជក្រឹត្យលេខ ​នស/រកត/០២១៤/១៩៥  &nbspចុះថ្ងៃទី១៧  &nbsp ​ខែកុម្ភៈ ​ឆ្នាំ២០១៤ &nbspស្តីពីការកែសម្រួលព្រះរាជក្រឹត្យ <br>
                     &nbsp &nbsp &nbsp លេខ នស/រកត/០៥៩៥/៤០ ចុះថ្ងៃទី២១ ខែមេសា &nbsp​ឆ្នាំ១៩៩៥  &nbsp &nbsp ​ស្តីពីការបង្កើតសាលាភូមិន្ទរដ្ឋបាល </p>
                    <p>- &nbsp &nbsp ​បានឃើញព្រះរាជក្រឹត្យលេខ​ &nbspនស/រកត/០២១៩/២៥៨​ &nbspចុះថ្ងៃទី២០​  ខែកុម្ភៈ  ឆ្នាំ២០១៩ &nbsp ស្តីពីការរៀបចំនិងការប្រព្រឹត្តទៅ<br>
                     &nbsp &nbsp &nbsp នៃសាលាភូមិន្ទរដ្ឋបាល</p>
@@ -46,23 +89,23 @@
                 <table height="100%" class="list"  border-collapse="collapse">
                     <tr>
                         <th width="15%">បញ្ជាក់ថាឈ្មោះ</th>
-                        <th id="insert" width="33%">សថសដ្ិនសនងថចិេ</th>
+                        <th id="insert" width="33%"><?php echo $student['fullnameKh']; ?></th>
                         <th  width="15%">ជាអក្សរឡាតាំង</th>
-                        <th id="insert" width="33%">៨៧៩៩រតងវេ៨៦៨៧៨ដង</th>
+                        <th id="insert" width="33%"><?php echo $student['fullnameLatin']; ?></th>
                         <th id="gender" width="5%">ភេទ</th>
-                        <th  width="8%">ប្រុស</th>
+                        <th  width="8%"><?php echo $student['sex']; ?></th>
                     </tr>
                     <tr>
                         <th width="8%">កើតថ្ងៃទី</th>
-                        <th id="insert-date" width="19%"></th>
+                        <th id="insert-date" width="19%"><?php echo $student['dateofbirth']; ?></th>
                         <th width="5%">នៅ</th>
-                        <th id="insert" width="17%"></th>
+                        <th id="insert" width="17%"><?php echo $student['placeofbirth']; ?></th>
                         <th width="11%">ជាសិក្ខាកាម</th>
                         <!-- <th id="insert" width="39%">គ្រប់គ្រងរដ្ឋបាលនិងលិខិតគតិយុត្ត</th> -->
-                        <th id="insert" width="39%"></th>
+                        <th id="insert" width="39%"><?php echo $course['name']; ?></th>
                     </tr>
                     <tr >
-                        <th colspan="6" id="line-time">បានទទួលការបណ្តុះបណ្តាលនៅសាលាភូមិន្ទរដ្ឋបាលរយៈពេល ១២០ម៉េាង ដោយជោគជ័យ។</th>
+                        <th colspan="6" id="line-time">បានទទួលការបណ្តុះបណ្តាលនៅសាលាភូមិន្ទរដ្ឋបាលរយៈពេល <?php echo $course['duration']; ?> ដោយជោគជ័យ។</th>
                     </tr>
                     <tr >
                         <th colspan="6" id="line-time">វិញ្ញាបនបត្របញ្ជាក់ការសិក្សានេះត្រូវបានចេញជូនសាមីជន ដើម្បីប្រើប្រាស់តាមផ្លូវច្បាប់។</th>
@@ -72,7 +115,7 @@
             <!------PHOTO-->
             <div class="photo">
                 <div>
-                    <h1>ចុះបញ្ជីលេខ : </h1>
+                    <h1>ចុះបញ្ជីលេខ : </h1> <?php echo "".$number; ?>
                     <div id="box-photo">
                         <p> រូបថត</p> <b>៤x៦</b>
                     </div>
@@ -95,15 +138,16 @@
                 </div>
             </footer>
         </section>
-    </div>
         </center>
-        <script>
-            // self executing function here
-            (function() {
-                // your page initialization code here
-                // the DOM will be available here
-                window.print();
-            })();
-        </script>    
+        
     </body>
+    <script>
+        // self executing function here
+        (function() {
+            // your page initialization code here
+            // the DOM will be available here
+        indow.print();
+        })();
+    </script> 
 </html>
+<?php } ?>
