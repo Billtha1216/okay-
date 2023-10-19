@@ -1,7 +1,7 @@
 <?php
-$firstname = 'NHEM';
-$lastname = 'VICHIKA';
-$firstnamephonetic = 'ញ៉ែម';
+$firstname = '';
+$lastname = '';
+$firstnamephonetic = '';
 $lastnamephonetic = 'វិច្ឆិកា';
 //-----------------------------------------------------------------------------------------
 $student['fullnameKh'] = $firstnamephonetic." ".$lastnamephonetic ;
